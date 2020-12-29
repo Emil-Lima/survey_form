@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    <link rel="stylesheet" href="surveyForm.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
+  </head>
+
+  <body>
+    <div id="main">
+      <div>
+        <h1 id="title">Videogame Console Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve our services</p>
+      </div>
+      <form id="survey-form">
+        <div class="div1"
+          <label id="name-label" for="name">Name</label><br>
+          <input type="text" id="name" name="name" value="" placeholder="Enter your name" required>
+        </div>
+        <div class="div1">
+          <label id="email-label" for="email">Email</label><br>
+          <input type="email" id="email" name="email" value="" placeholder="Enter your email" required>
+        </div>
+        <div class="div1">
+          <label id="number-label" for="number">Age</label><br>
+          <input type="number" id="number" name="number" min="0" max="200" value="" placeholder="Age" required>
+        </div>
+        <div class="formGroup">
+          <p id="currentRole">Which option best describes your current role?
+          </p>
+          <select id="dropdown" name="dropdown">
+            <option value="" disabled selected>Select current role</option>
+            <option value="student">Student</option>
+            <option value="fullTimeJob">Full Time Job</option>
+            <option value="fullTimeLearner">Full Time Learner</option>
+            <option value="preferNotToSay">Prefer not to say</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="formGroup">
+            <p id="gamingsystem">If you could have only one gaming system, which one would you choose?</p>
+            <label for="ps4">Play Station 4</label>
+            <input type="radio" name="surv1" value="ps4" id="ps4" checked required><br>
+            <label for="ps4pro">Play Station 4 pro</label>
+            <input type="radio" name="surv1" value="ps4pro" id="ps4pro" required><br>
+            <label for="ps5">Play Station 5</label>
+            <input type="radio" name="surv1" value="ps5" id="ps5" required><br>
+            <label for="xboxones">Xbox One S</label>
+            <input type="radio" name="surv1" value="xboxones" id="xboxones" required><br>
+            <label for="xboxonex">Xbox One X</label>
+            <input type="radio" name="surv1" value="xboxonex" id="xboxonex" required><br>
+            <label for="stadia">Google Stadia</label>
+            <input type="radio" name="surv1" value="stadia" id="stadia" required><br>
+            <label for="pc">PC</label>
+            <input type="radio" name="surv1" value="pc" id="pc" required><br>
+            <label for="nintendoswitch">Nintendo Switch</label>
+            <input type="radio" name="surv1" value="nintendoswitch" id="nintendoswitch" required><br>
+          </div>
+          <div class="formGroup">
+            <p id="gamegenre">What video game genres do you like?<span> (Check all that apply)</span></p>
+            <label for="all">All</label>
+            <input type="checkbox" name="surv2" value="all" id="all"><br>
+            <label for="platform">Platform</label>
+            <input type="checkbox" name="surv2" value="platform" id="platform"><br>
+            <label for="shooter">Shooter</label>
+            <input type="checkbox" name="surv2" value="shooter" id="shooter"><br>
+            <label for="fighting">Fighting</label>
+            <input type="checkbox" name="surv2" value="fighting" id="fighting"> <br> <!-- Create a grid box here and delete this <br> , and then include more options, preferably 3 columns-->
+            <label for="beatemup">Beat'em up</label>
+            <input type="checkbox" name="surv2" value="beatemup" id="beatemup">
+        </div>
+        <div class="div2">
+          <label for="userText">Any comments or suggestions?</label>
+          <textarea name="userText" rows="6" cols="40" id="userText" placeholder="Enter your comment here..."></textarea>
+        </div>
+        <button type="submit" name="button" id="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
